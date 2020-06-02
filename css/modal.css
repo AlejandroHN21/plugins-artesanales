@@ -1,0 +1,146 @@
+
+
+.container-card{
+    width: 30%;
+    height: 280px;
+    display: block;
+    box-shadow: 2px 2px 3px rgba(0,0,0,0.5);
+    margin: 0 auto;
+
+}
+
+.container-card .img-card{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.container-card .view{
+    padding: 10px;
+    background-color: #222222;
+    color: white;
+    font-weight: 700;
+    font-size: 1.1rem;
+    display: inline-block;
+    margin-top: 15px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+.container-card .view:hover{
+    background-color: white ;
+    color: #333;
+    border: 1px solid #333;
+}
+
+.modal{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    background-color: rgba(0,0,0,0.8);
+    visibility: hidden;
+    opacity: 0;
+
+    /* centrar contenido de la modal */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* ........................ */
+}
+
+.modal .contenido-modal{
+    width: 50%;
+    height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fdfdfd;
+
+}
+
+.modal .contenido-modal .parrafo-modal{
+    padding: 20px;
+    font-size: 1.3rem;
+}
+
+.modal .contenido-modal .close-modal{
+    padding: 7px 15px;
+    background-color: rgb(216, 3, 3);
+    color: white;
+    border-radius: 5px;
+    display: inline-block;
+    margin-left: 5px;
+    margin-top: 5px;
+    border: 1px solid rgba(0,0,0,0.3);
+    cursor: pointer;
+}
+.modal .contenido-modal .close-modal:hover{
+    background-color: white;
+    color: rgb(216, 3, 3);
+}
+
+.active-modal{
+    visibility: visible;
+    opacity: 1;
+    transition: .5s ease;
+    left: 0;
+}
+
+@media screen and (max-width:480px){
+   
+    .container-card{
+        width: 90%;
+        height: 280px;
+        display: block;
+        box-shadow: 2px 2px 3px rgba(0,0,0,0.5);
+        margin: auto;
+    
+    }
+    
+    .container-card .img-card{
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+    
+    .container-card .view{
+        padding: 10px;
+        background-color: #222222;
+        color: white;
+        font-weight: 700;
+        font-size: 1.1rem;
+        display: inline-block;
+        margin-top: 15px;
+        margin-left: 10px;
+        cursor: pointer;
+        border-radius: 7px;
+    }
+    
+    .container-card .view:hover{
+        background-color: white ;
+        color: #333;
+        border: 1px solid #333;
+    }
+  
+    .modal .contenido-modal{
+        width: 90%;
+        height: 330px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #fdfdfd;
+        padding: 10px;
+    
+    }
+    
+    .modal .contenido-modal .parrafo-modal{
+        padding: 15px;
+        font-size: 1.2rem;
+        text-align: left;
+    }
+
+}
+

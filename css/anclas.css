@@ -1,0 +1,123 @@
+
+    h3{
+        color: tomato;
+        text-align: center;
+        font-size: 1.3rem;
+        padding: 7px;
+    }
+
+    .container4{
+        width: 100%;
+        height: 350px;
+        margin-top: 20px; 
+    }
+
+    .container4 .cont-anclas{
+        width: 750px;
+        height: auto;
+        margin: 0 auto;
+
+        display: flex;
+    }
+
+    .container4 .cont-anclas .ancla{
+        width: 125px;
+        height: 50px;
+        text-decoration: none;
+        background-color: #fdfdfd;
+        color: #333;
+        cursor: pointer;
+        
+        /* centra el contenido de los tabs */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container4 .cont-anclas .ancla:hover{
+        background-color: rgb(255, 136, 0);
+        color: white;
+        font-size: 1.1rem;
+    }
+    .container4 .cont-anclas .active_ancla{
+        background-color: rgb(255, 136, 0);
+        color: white;
+    }
+
+
+    .container4 .cont-contenido .item-contenido{
+        display: none;
+    }
+
+    .container4 .cont-contenido{
+        width: 750px;
+        height: auto;    
+        margin: 0 auto;
+        border: 1px solid rgba(247, 114, 5,0.5);
+    }
+
+    .container4 .cont-contenido .parrafo{
+        color: #777777;
+        font-weight: lighter;
+        padding: 20px;
+        
+    }
+
+    .container4 .cont-contenido .active_tab{
+        display: block;
+    }
+
+
+
+@media screen and (max-width:480px){
+  
+    .container4{
+        width: 100%;
+        height: 350px;
+        margin-top: 20px;
+        margin-bottom: 110px; 
+    }
+    
+
+    .container4 .cont-anclas{
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+
+        display: flex;
+    }
+
+    .container4 .cont-contenido{
+        width: 100%;
+        height: auto;    
+        margin: 0 auto;
+        border: 1px solid rgba(247, 114, 5,0.5);
+    }
+ 
+}
+
+.cont-noti {
+    width: 100%;
+    height: auto;
+    
+    /* centrar */
+    display: flex;
+    justify-content: center;
+}
+
+.cont-noti .btn-noti {
+     padding: 10px;
+     width: 140px;
+     height: 40px;
+     border: none;
+     background-color: tomato;
+     color: white;
+     font-weight: bold;
+     border: 1px solid rgba(0,0,0,0.1);
+     text-transform: uppercase;
+     transition: .2s ease ; 
+     cursor:pointer ; 
+     margin-top: 10px;
+}.cont-noti .btn-noti:hover{
+    box-shadow: 2px 2px 2px gray;
+}
